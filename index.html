@@ -100,7 +100,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 
     <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
       <h3>Еңбек өтілі: 20 жыл</h3>
-      <p>«Ұстаздық еткен жалықпас, үйретуден балаға» <br/> Абай</p>
+      <p>"Ұстаздық еткен жалықпас, үйретуден балаға" <br/> Абай</p>
     </div>
 
     <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
@@ -126,7 +126,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
           <h3>7 СЫНЫП</h3>
           <p class="w3-opacity">БЖБ</p>
           <p>IV тоқсан <br/>Бөлім бойынша жиындық бағалау, сәттілік!</p>
-          <p><button class="w3-button w3-light-grey w3-block">Экзаменнан өту</button></p>
+          <p><button class="w3-button w3-light-grey w3-block" id="BSeven" onclick="BSeven()">Экзаменнан өту</button></p>
         </div>
       </div>
     </div>
@@ -274,7 +274,10 @@ function plusDivs(n) {
 function currentDiv(n) {
   showDivs(slideIndex = n);
 }
-
+function BSeven() {
+  //window.open(pathString, target);
+  window.open("https://docs.google.com/forms/d/e/1FAIpQLScxeQkmjwHxBwdsorTdvv_kB6ehC8pOM1_6WivvLoQzWT3siQ/viewform?usp=sf_link", "_blank");
+};
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
@@ -290,6 +293,7 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
 }
+  
 </script>
 
 </body>
